@@ -4,7 +4,7 @@ title:  "Publish-Module: Could not create SSl/TLS secure channel error"
 date:   2018-06-08 9:00:51 -0500
 categories: powershell powershellget
 ---
-Ran into an issue this week with {% highlight powershell %}Publish-Module{% endhighlight %}. I have recently setup a internal Nuget repo server, in my case a Proget server.
+Ran into an issue this week with the Publish-Module cmdlet. I have recently setup a internal Nuget repo server, in my case a Proget server.
 I began my work integrating a CI/CD pipeline for taking Powershell modules and uploading them to Proget. Unfortunately I quickly ran into an issue when attempting to upload
 a module to the Proget feed. I would attempt to run {% highlight powershell %}Publish-Module -Path C:\pathtomodule\ -NuGetApiKey MyApiKey -Repository MyInternalRepo{% endhighlight %}
 and it would error out with:
